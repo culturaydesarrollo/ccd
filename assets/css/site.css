@@ -1,0 +1,40 @@
+.masthead {
+  background-image: url("../img/team/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-section {
+  background-image: url("../img/map-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-nav-link {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 14.4px;
+  min-width: 180px;
+}
+
+.navbar-collapse {
+  text-align: left;
+}
+
+.text-almost-black {
+  color: #24130f !important;
+}
+
+.text-dark-content {
+  color: #1f2937 !important;
+}
+
+.bg-offwhite {
+  background-color: #fefefe !important;
+}
+
+.portfolio-modal .modal-body {
+  color: #1f2937;
+}
