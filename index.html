@@ -2852,6 +2852,22 @@
 
   </script>
 
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // 1. Verificamos si el visitante viene haciendo clic desde el botón de contacto del blog
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('scrolldown') === 'true') {
+      // 2. Buscamos el formulario de contacto usando su etiqueta exacta
+      const contactoSection = document.getElementById('contacto');
+      if (contactoSection) {
+        // 3. Forzamos al navegador a desplazarse de forma fluida y exacta hasta la posición
+        setTimeout(() => {
+          contactoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300); // 300ms de espera para asegurar que las imágenes y textos ya cargaron
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
