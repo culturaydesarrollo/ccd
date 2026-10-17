@@ -6,11 +6,12 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
+  <!-- Una sola descripción: tener dos hacía que Google eligiera una al azar. -->
   <meta name="description"
-        content="Corporación Cultura y Desarrollo. Memoria, territorio, cultura y comunidad.">
+        content="Corporación Cultura y Desarrollo: organización colombiana que impulsa la cultura, la participación comunitaria y el desarrollo territorial.">
 
-  <meta name="description"
-        content="Corporación Cultura y Desarrollo. Memoria, territorio, cultura y comunidad. Cultura y Desarrollo es una organización colombiana que impulsa iniciativas de cultura, participación y desarrollo social.">
+  <!-- URL canónica: evita que el apex y www compitan por el mismo contenido. -->
+  <link rel="canonical" href="https://culturaydesarrollo.org/">
 
   <meta property="og:locale" content="es_CO">
   <meta property="og:site_name" content="Cultura y Desarrollo">
@@ -20,6 +21,15 @@
   <meta property="og:url" content="https://culturaydesarrollo.org/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://culturaydesarrollo.org/assets/img/team/header-bg.jpg">
+  <meta property="og:image:alt" content="Corporación Cultura y Desarrollo">
+
+  <!-- Twitter/X: sin estas etiquetas el enlace se publica como texto plano. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cultura y Desarrollo | Organización cultural en Colombia">
+  <meta name="twitter:description"
+        content="Organización colombiana que impulsa iniciativas de cultura, participación y desarrollo social.">
+  <meta name="twitter:image" content="https://culturaydesarrollo.org/assets/img/team/header-bg.jpg">
+  <meta name="twitter:image:alt" content="Corporación Cultura y Desarrollo">
 
   <meta name="theme-color" content="#173F35">
 
@@ -1570,6 +1580,34 @@
   </style>
 
 <meta name="google-site-verification" content="-JKbeC2WB-yLjdcUuftRDCjE4mUqM26ANzcBpwgzfRU" />
+
+<!--
+  Datos estructurados de la organización: es lo que le permite a Google
+  entender quiénes somos y asociar este dominio con la entidad.
+  El logo apunta al SVG porque es el único que existe; para que aparezca
+  en el panel de conocimiento haría falta una versión en PNG de 112x112
+  como mínimo.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Corporación Cultura y Desarrollo",
+  "alternateName": "Cultura y Desarrollo",
+  "url": "https://culturaydesarrollo.org/",
+  "logo": "https://culturaydesarrollo.org/assets/img/logo.svg",
+  "image": "https://culturaydesarrollo.org/assets/img/team/header-bg.jpg",
+  "description": "Organización colombiana que impulsa iniciativas de cultura, participación comunitaria y desarrollo social.",
+  "inLanguage": "es-CO",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Colombia"
+  },
+  "sameAs": [
+    "https://www.instagram.com/corporacioncyd/"
+  ]
+}
+</script>
 
 </head>
 
